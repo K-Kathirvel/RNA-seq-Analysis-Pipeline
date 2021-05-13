@@ -30,7 +30,7 @@ cd DiffExp
 R
 setwd("/home/Quantification")
 library(readr)
-Counts <- read_csv("~/Quantification/Counts_R>9.csv")
+Counts <- read_csv("~/Quantification/Counts.csv")
 GeneNames <- Counts$Geneid
 Counts <- Counts[, -c(1)]
 row.names(Counts) <- GeneNames
