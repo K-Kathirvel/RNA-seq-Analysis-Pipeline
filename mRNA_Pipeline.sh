@@ -1,5 +1,5 @@
 ##Quality Pre-Processing :
-cd /home/Data/cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC  -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -o File1_R1_filtered.fastq -p File2_R2_filtered.fastq  File1_R1.fastq File2_R2.fastq
+/home/Data/cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC  -A AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT -o File1_R1_filtered.fastq -p File2_R2_filtered.fastq  File1_R1.fastq File2_R2.fastq
 ##Reference Indexing:
 STAR --runThreadN 32 --runMode genomeGenerate --genomeDir /home/STAR/Indexed_Reference/ --genomeFastaFiles /home/Homo_sapiens.GRCh38.77.fa --sjdbGTFfile /home/Homo_sapiens.GRCh38.77.gtf --sjdbOverhang 101
 ##Mapping:
