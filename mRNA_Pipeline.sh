@@ -77,7 +77,7 @@ write.table(y, file = "/home/DiffExp/DEG_R_expression.rnk", quote = F, sep = "\t
 #Running GSEA
 library(fgsea)
 library(tibble)
-pathways <- gmtPathways("/home/c2.cp.symbols.gmt")
+pathways <- gmtPathways("/home/CombinedPathways.symbols.gmt")
 ranks = deframe(y)
 fgseaRes <- fgsea(pathways=pathways, stats=ranks, nperm=1000)
 fgseaRes2 = data.frame(lapply(fgseaRes, as.character), stringsAsFactors=FALSE)
